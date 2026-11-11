@@ -10,3 +10,6 @@ __pycache__/
 
 # nic z profilu/Claude do repozitare
 .claude/
+
+# vyjimka: zipy obsazene v Kodi repozitari (generuje tools/make_repo.py)
+!repo/zips/**/*.zip

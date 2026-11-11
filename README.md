@@ -41,9 +41,22 @@ Plugin titulky nehledá sám. Nainstalujte v Kodi doplněk pro titulky (např. T
 | `tests/` | testy parseru: `python -m unittest discover -s tests -v` |
 | `tools/` | jednorázové sondy a prohlížeč seskupení nad uloženými daty |
 
-## Instalace
+## Instalace a automatické aktualizace
 
-Zip se sestaví skriptem `tools/build_zip.py` (vznikne na Ploše). V Kodi: Nastavení, Doplňky, Instalovat z archivu ZIP.
+Doplněk se do Kodi dostane přes repozitář na GitHubu, takže se nové verze stahují samy.
+
+**Jednorázově v Kodi** (Nastavení, Doplňky, Instalovat z archivu ZIP): nainstalujte soubor
+`repo/zips/repository.webshare.streamcinema/repository.webshare.streamcinema-1.0.0.zip`
+(stáhněte ho z GitHubu). Pak: Doplňky, Instalovat z repozitáře, Webshare Stream Cinema Repository,
+Doplňky videa, Webshare Stream Cinema. Kodi bude od té chvíle kontrolovat nové verze samo.
+
+**Nové vydání** (vývojář):
+
+1. zvýšit `version` v `addon.xml` (např. `1.00` na `1.01`),
+2. `python tools/make_repo.py` (vytvoří zip, `repo/addons.xml` a kontrolní součet),
+3. `git add -A`, `git commit`, `git push`.
+
+Samostatný zip bez repozitáře vytvoří `python tools/build_zip.py`.
 
 ## Varování
 

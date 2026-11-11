@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.webshare.streamcinema" name="Webshare Stream Cinema Repository" version="1.0.0" provider-name="Webshare Stream Cinema">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Webshare Stream Cinema Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/DroidLukish/Webshare-Stream-Cinema/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/DroidLukish/Webshare-Stream-Cinema/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/DroidLukish/Webshare-Stream-Cinema/main/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Webshare Stream Cinema Repository</summary>
+        <description>Repozitar pro automaticke aktualizace doplnku Webshare Stream Cinema.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

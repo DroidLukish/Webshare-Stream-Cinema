@@ -1,0 +1,5 @@
+# soubory repozitare musi mit stabilni konce radku, jinak nesedi kontrolni soucet
+repo/addons.xml text eol=lf
+repo/addons.xml.md5 text eol=lf
+*.zip binary
+*.png binary
