@@ -1,0 +1,12 @@
+# vysledky sond ze serveru a zaloha puvodni verze
+tools/probe_output/
+_backup_original/
+plugin/
+
+# sestavene zipy a cache Pythonu
+*.zip
+__pycache__/
+*.pyc
+
+# nic z profilu/Claude do repozitare
+.claude/

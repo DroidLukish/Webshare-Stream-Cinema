@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.webshare.streamcinema" name="Webshare Stream Cinema" version="1.00" provider-name="Webshare Stream Cinema">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.18.4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Webshare Stream Cinema</summary>
+        <disclaimer lang="en_GB">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
+        <disclaimer lang="sk_SK">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
+        <disclaimer lang="cs_CZ">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
+        <platform>all</platform>
+        <license>AGPL 3.0</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+        <news>
+[B]1.00[/B]
+- hledani: vysledky seskupene podle filmu a serialu
+- vyber verze (kvalita, dabing, velikost) v dialogu
+- serialy: rada, epizoda, vyber verze
+- pri prehravani se predava titul, rok, rada a epizoda (pro doplnky s titulky)
+- menu: Nove hledani, Historie hledani, Nastaveni
+- vyzaduje Kodi 19 (Matrix) a novejsi
+        </news>
+    </extension>
+</addon>
